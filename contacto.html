@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+</head>
+<body>
+  <nav>
+    <a href="Inicio.html">Inicio</a> |
+    <a href="proyectos.html">Proyectos</a> |
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <fieldset>
+          <legend>Formulario de contacto</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="pais">País:</label>
+          <select id="pais" name="pais" required>
+            <option value="">Selecciona tu país</option>
+            <option value="+57">Colombia (+57)</option>
+            <option value="+54">Argentina (+54)</option>
+            <option value="+56">Chile (+56)</option>
+            <option value="+51">Perú (+51)</option>
+            <option value="+52">México (+52)</option>
+            <option value="+58">Venezuela (+58)</option>
+            <option value="+53">Cuba (+53)</option>
+            <option value="+591">Bolivia (+591)</option>
+            <option value="+502">Guatemala (+502)</option>
+            <option value="+503">El Salvador (+503)</option>
+            <option value="+504">Honduras (+504)</option>
+            <option value="+505">Nicaragua (+505)</option>
+            <option value="+506">Costa Rica (+506)</option>
+            <option value="+507">Panamá (+507)</option>
+            <option value="+595">Paraguay (+595)</option>
+            <option value="+598">Uruguay (+598)</option>
+            <option value="+592">Guyana (+592)</option>
+            <option value="+597">Surinam (+597)</option>
+            <option value="+1">Estados Unidos (+1)</option>
+            <option value="+34">España (+34)</option>
+          </select><br><br>
+          <label for="telefono">Número:</label>
+          <input type="tel" id="telefono" name="telefono" pattern="[0-9]{7,15}" required placeholder="Solo números"><br><br>
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea><br><br>
+          <input type="checkbox" id="privacidad" name="privacidad" required>
+          <label for="privacidad">Acepto la política de privacidad</label><br><br>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpiar">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
